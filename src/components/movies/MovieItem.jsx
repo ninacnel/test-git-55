@@ -1,10 +1,14 @@
+import { Card } from "react-bootstrap"
+
 const MovieItem = ({ movieTitle, director, year }) => {
   return (
-    <div>
-        <h1>{movieTitle}</h1>
-        <h2>{director}</h2>
-        <h3>{year}</h3>
-    </div>
+    <Card>
+      <Card.Body>
+        <Card.Title>{movieTitle}</Card.Title>
+        <Card.Text>{year}</Card.Text>
+        <Card.Subtitle>{director}</Card.Subtitle>
+      </Card.Body>
+    </Card>
   )
 }
 

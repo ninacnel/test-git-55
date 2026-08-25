@@ -7,11 +7,9 @@ const Movies = () => {
     <Container>
       <Row>
         {moviesList.map((item) => (
-          <Col key={item.movieId} className="col-12 col-md-6 col-lg-3">
+          <Col key={item.movieId} className="col-12 col-md-6 col-lg-3 m-2">
             <MovieItem
-              movieTitle={item.title}
-              director={item.director}
-              year={item.year}
+              movie={item}
             />
           </Col>
         ))}

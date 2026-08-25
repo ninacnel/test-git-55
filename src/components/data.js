@@ -1,23 +1,25 @@
 export const moviesList = [
     {
         movieId: 1,
+        title: "The Lord of the Rings: The Fellowship of the Ring",
+        director: "Peter Jackson",
+        year: 2001,
+        duration: 178,
+        cast: ["Elijah Wood", "Ian McKellen", "Viggo Mortensen"],
+        country: "New Zealand",
+        isFree: false,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+    },
+    {
+        movieId: 2,
         title: "El secreto de sus ojos",
         director: "Juan José Campanella",
         year: 2009,
         duration: 129,
         cast: ["Ricardo Darín", "Soledad Villamil", "Guillermo Francella"],
         country: "Argentina",
-        isFree: false
-    },
-    {
-        movieId: 2,
-        title: "Relatos salvajes",
-        director: "Damián Szifron",
-        year: 2014,
-        duration: 122,
-        cast: ["Ricardo Darín", "Érica Rivas", "Oscar Martínez"],
-        country: "Argentina",
-        isFree: false
+        isFree: false,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
     },
     {
         movieId: 3,
@@ -27,7 +29,8 @@ export const moviesList = [
         duration: 114,
         cast: ["Ricardo Darín", "Gastón Pauls", "Leticia Brédice"],
         country: "Argentina",
-        isFree: true
+        isFree: true,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
     },
     {
         movieId: 4,
@@ -37,7 +40,8 @@ export const moviesList = [
         duration: 108,
         cast: ["Guillermo Francella", "Peter Lanzani", "Lili Popovich"],
         country: "Argentina",
-        isFree: true
+        isFree: true,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
     },
     {
         movieId: 5,
@@ -47,7 +51,8 @@ export const moviesList = [
         duration: 140,
         cast: ["Ricardo Darín", "Peter Lanzani", "Alejandra Flechner"],
         country: "Argentina",
-        isFree: false
+        isFree: false,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
     },
 
     {
@@ -58,7 +63,8 @@ export const moviesList = [
         duration: 142,
         cast: ["Tim Robbins", "Morgan Freeman", "Bob Gunton"],
         country: "USA",
-        isFree: false
+        isFree: false,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
     },
     {
         movieId: 7,
@@ -68,7 +74,8 @@ export const moviesList = [
         duration: 148,
         cast: ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"],
         country: "USA",
-        isFree: false
+        isFree: false,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
     },
     {
         movieId: 8,
@@ -78,7 +85,8 @@ export const moviesList = [
         duration: 152,
         cast: ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
         country: "USA",
-        isFree: false
+        isFree: false,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
     },
     {
         movieId: 9,
@@ -88,7 +96,8 @@ export const moviesList = [
         duration: 139,
         cast: ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"],
         country: "USA",
-        isFree: true
+        isFree: true,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
     },
     {
         movieId: 10,
@@ -98,7 +107,8 @@ export const moviesList = [
         duration: 154,
         cast: ["John Travolta", "Uma Thurman", "Samuel L. Jackson"],
         country: "USA",
-        isFree: false
+        isFree: false,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
     },
     {
         movieId: 11,
@@ -108,7 +118,8 @@ export const moviesList = [
         duration: 142,
         cast: ["Tom Hanks", "Robin Wright", "Gary Sinise"],
         country: "USA",
-        isFree: true
+        isFree: true,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
     },
     {
         movieId: 12,
@@ -118,7 +129,8 @@ export const moviesList = [
         duration: 136,
         cast: ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
         country: "USA",
-        isFree: false
+        isFree: false,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
     },
     {
         movieId: 13,
@@ -128,7 +140,8 @@ export const moviesList = [
         duration: 169,
         cast: ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"],
         country: "USA",
-        isFree: false
+        isFree: false,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
     },
     {
         movieId: 14,
@@ -138,7 +151,8 @@ export const moviesList = [
         duration: 128,
         cast: ["Ryan Gosling", "Emma Stone", "John Legend"],
         country: "USA",
-        isFree: true
+        isFree: true,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
     },
     {
         movieId: 15,
@@ -148,7 +162,8 @@ export const moviesList = [
         duration: 155,
         cast: ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen"],
         country: "USA",
-        isFree: false
+        isFree: false,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
     },
 
     {
@@ -159,7 +174,8 @@ export const moviesList = [
         duration: 152,
         cast: ["Daniel Radcliffe", "Emma Watson", "Rupert Grint"],
         country: "England",
-        isFree: false
+        isFree: false,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
     },
     {
         movieId: 17,
@@ -169,7 +185,8 @@ export const moviesList = [
         duration: 91,
         cast: ["Graham Chapman", "John Cleese", "Eric Idle"],
         country: "England",
-        isFree: true
+        isFree: true,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
     },
     {
         movieId: 18,
@@ -179,7 +196,8 @@ export const moviesList = [
         duration: 129,
         cast: ["Keira Knightley", "Matthew Macfadyen", "Brenda Blethyn"],
         country: "England",
-        isFree: false
+        isFree: false,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
     },
 
     {
@@ -190,7 +208,8 @@ export const moviesList = [
         duration: 119,
         cast: ["Chieko Baisho", "Takuya Kimura", "Akihiro Miwa"],
         country: "Japan",
-        isFree: false
+        isFree: false,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
     },
     {
         movieId: 20,
@@ -200,8 +219,20 @@ export const moviesList = [
         duration: 81,
         cast: ["Junko Iwao", "Rica Matsumoto", "Shinpachi Tsuji"],
         country: "Japan",
-        isFree: true
-    }
+        isFree: true,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+    },
+    {
+        movieId: 21,
+        title: "Relatos salvajes",
+        director: "Damián Szifron",
+        year: 2014,
+        duration: 122,
+        cast: ["Ricardo Darín", "Érica Rivas", "Oscar Martínez"],
+        country: "Argentina",
+        isFree: false,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+    },
 ];
 
 export const beers = [

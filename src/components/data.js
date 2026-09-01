@@ -1,14 +1,14 @@
 export const moviesList = [
     {
         movieId: 1,
-        title: "The Lord of the Rings: The Fellowship of the Ring",
-        director: "Peter Jackson",
-        year: 2001,
-        duration: 178,
-        cast: ["Elijah Wood", "Ian McKellen", "Viggo Mortensen"],
-        country: "New Zealand",
-        isFree: false,
-        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+        title: "Back to the Future",
+        director: "Robert Zemeckis",
+        year: 1985,
+        duration: 116,
+        cast: ["Michael J. Fox", "Christopher Lloyd", "Lea Thompson"],
+        country: "United States",
+        isFree: true,
+        image: "https://i.pinimg.com/736x/fc/6e/d4/fc6ed4d721eef816985f81e066d59e31.jpg"
     },
     {
         movieId: 2,
@@ -32,16 +32,17 @@ export const moviesList = [
         isFree: true,
         image: "https://i.pinimg.com/736x/06/8f/25/068f25490737e19bf8f923a50aa41f84.jpg"
     },
+
     {
         movieId: 4,
-        title: "Back to the Future",
-        director: "Robert Zemeckis",
-        year: 1985,
-        duration: 116,
-        cast: ["Michael J. Fox", "Christopher Lloyd", "Lea Thompson"],
-        country: "United States",
-        isFree: true,
-        image: "https://i.pinimg.com/736x/fc/6e/d4/fc6ed4d721eef816985f81e066d59e31.jpg"
+        title: "The Lord of the Rings: The Fellowship of the Ring",
+        director: "Peter Jackson",
+        year: 2001,
+        duration: 178,
+        cast: ["Elijah Wood", "Ian McKellen", "Viggo Mortensen"],
+        country: "New Zealand",
+        isFree: false,
+        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
     },
     {
         movieId: 5,

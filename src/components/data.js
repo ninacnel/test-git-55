@@ -19,7 +19,7 @@ export const moviesList = [
         cast: ["Ricardo Darín", "Soledad Villamil", "Guillermo Francella"],
         country: "Argentina",
         isFree: false,
-        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+        image: "https://i.pinimg.com/736x/ee/5e/91/ee5e91774d6731c35909af90c13b6c62.jpg"
     },
     {
         movieId: 3,
@@ -30,29 +30,29 @@ export const moviesList = [
         cast: ["Ricardo Darín", "Gastón Pauls", "Leticia Brédice"],
         country: "Argentina",
         isFree: true,
-        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+        image: "https://i.pinimg.com/736x/06/8f/25/068f25490737e19bf8f923a50aa41f84.jpg"
     },
     {
         movieId: 4,
-        title: "El clan",
-        director: "Pablo Trapero",
-        year: 2015,
-        duration: 108,
-        cast: ["Guillermo Francella", "Peter Lanzani", "Lili Popovich"],
-        country: "Argentina",
+        title: "Back to the Future",
+        director: "Robert Zemeckis",
+        year: 1985,
+        duration: 116,
+        cast: ["Michael J. Fox", "Christopher Lloyd", "Lea Thompson"],
+        country: "United States",
         isFree: true,
-        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+        image: "https://i.pinimg.com/736x/fc/6e/d4/fc6ed4d721eef816985f81e066d59e31.jpg"
     },
     {
         movieId: 5,
-        title: "Argentina, 1985",
-        director: "Santiago Mitre",
-        year: 2022,
-        duration: 140,
-        cast: ["Ricardo Darín", "Peter Lanzani", "Alejandra Flechner"],
-        country: "Argentina",
+        title: "Pirates of the Caribbean: The Curse of the Black Pearl",
+        director: "Gore Verbinski",
+        year: 2003,
+        duration: 143,
+        cast: ["Johnny Depp", "Geoffrey Rush", "Orlando Bloom", "Keira Knightley"],
+        country: "United States",
         isFree: false,
-        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+        image: "https://i.pinimg.com/736x/2a/06/2d/2a062ddf66b62c8844e01b8efa7771e4.jpg"
     },
 
     {
@@ -64,7 +64,7 @@ export const moviesList = [
         cast: ["Tim Robbins", "Morgan Freeman", "Bob Gunton"],
         country: "USA",
         isFree: false,
-        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+        image: "https://i.pinimg.com/1200x/08/6f/fe/086ffeccab22baa2b4d49ab8787f9b90.jpg"
     },
     {
         movieId: 7,
@@ -75,7 +75,7 @@ export const moviesList = [
         cast: ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"],
         country: "USA",
         isFree: false,
-        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+        image: "https://i.pinimg.com/1200x/5c/e3/5a/5ce35a87a0a4e2682eb622fceaef503e.jpg"
     },
     {
         movieId: 8,
@@ -86,7 +86,7 @@ export const moviesList = [
         cast: ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
         country: "USA",
         isFree: false,
-        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+        image: "https://i.pinimg.com/736x/3d/0e/6f/3d0e6ff648bb32e7cb065905c5d0eabe.jpg"
     },
     {
         movieId: 9,
@@ -97,7 +97,7 @@ export const moviesList = [
         cast: ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"],
         country: "USA",
         isFree: true,
-        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+        image: "https://i.pinimg.com/736x/4b/5c/cb/4b5ccbe420a9061ea4564e82e0261548.jpg"
     },
     {
         movieId: 10,
@@ -108,7 +108,7 @@ export const moviesList = [
         cast: ["John Travolta", "Uma Thurman", "Samuel L. Jackson"],
         country: "USA",
         isFree: false,
-        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+        image: "https://i.pinimg.com/1200x/f0/01/3c/f0013ca4a05245afde43e0eaa7d1a2ce.jpg"
     },
     {
         movieId: 11,
@@ -119,7 +119,7 @@ export const moviesList = [
         cast: ["Tom Hanks", "Robin Wright", "Gary Sinise"],
         country: "USA",
         isFree: true,
-        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+        image: "https://i.pinimg.com/736x/a3/6a/69/a36a692610d901f528abbe9dfc709c80.jpg"
     },
     {
         movieId: 12,
@@ -130,7 +130,7 @@ export const moviesList = [
         cast: ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
         country: "USA",
         isFree: false,
-        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+        image: "https://i.pinimg.com/736x/ed/45/16/ed4516338fa5df348c13a2a7ce1e7998.jpg"
     },
     {
         movieId: 13,
@@ -141,7 +141,7 @@ export const moviesList = [
         cast: ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"],
         country: "USA",
         isFree: false,
-        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+        image: "https://i.pinimg.com/1200x/0b/34/ce/0b34ce2145b475247577a5d438a199b0.jpg"
     },
     {
         movieId: 14,
@@ -152,7 +152,7 @@ export const moviesList = [
         cast: ["Ryan Gosling", "Emma Stone", "John Legend"],
         country: "USA",
         isFree: true,
-        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+        image: "https://i.pinimg.com/1200x/31/36/29/31362965af3b89381042320b9e6c2b8c.jpg"
     },
     {
         movieId: 15,
@@ -163,7 +163,7 @@ export const moviesList = [
         cast: ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen"],
         country: "USA",
         isFree: false,
-        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+        image: "https://i.pinimg.com/1200x/cc/a0/a6/cca0a6b9a11ace6f1ca2a13a4bd5858b.jpg"
     },
 
     {
@@ -175,7 +175,7 @@ export const moviesList = [
         cast: ["Daniel Radcliffe", "Emma Watson", "Rupert Grint"],
         country: "England",
         isFree: false,
-        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+        image: "https://i.pinimg.com/1200x/f5/43/96/f543964147cb9bdcb69dc6a72b65ac03.jpg"
     },
     {
         movieId: 17,
@@ -186,7 +186,7 @@ export const moviesList = [
         cast: ["Graham Chapman", "John Cleese", "Eric Idle"],
         country: "England",
         isFree: true,
-        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+        image: "https://i.pinimg.com/1200x/71/af/82/71af8247cf9f1b13485db67d01135250.jpg"
     },
     {
         movieId: 18,
@@ -197,7 +197,7 @@ export const moviesList = [
         cast: ["Keira Knightley", "Matthew Macfadyen", "Brenda Blethyn"],
         country: "England",
         isFree: false,
-        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+        image: "https://i.pinimg.com/736x/b5/c1/78/b5c178999004bfebdafc70bd82d3cde7.jpg"
     },
 
     {
@@ -209,7 +209,7 @@ export const moviesList = [
         cast: ["Chieko Baisho", "Takuya Kimura", "Akihiro Miwa"],
         country: "Japan",
         isFree: false,
-        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+        image: "https://i.pinimg.com/1200x/15/b8/ba/15b8bab3e3757d52980b4fb83ea42df2.jpg"
     },
     {
         movieId: 20,
@@ -220,7 +220,7 @@ export const moviesList = [
         cast: ["Junko Iwao", "Rica Matsumoto", "Shinpachi Tsuji"],
         country: "Japan",
         isFree: true,
-        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+        image: "https://i.pinimg.com/1200x/16/81/00/16810002ccb7785d8eb3992071a19620.jpg"
     },
     {
         movieId: 21,
@@ -231,7 +231,7 @@ export const moviesList = [
         cast: ["Ricardo Darín", "Érica Rivas", "Oscar Martínez"],
         country: "Argentina",
         isFree: false,
-        image: "https://i.pinimg.com/736x/a9/6a/00/a96a002732d97f46655bb7ed7a616db5.jpg"
+        image: "https://i.pinimg.com/1200x/06/9f/9c/069f9cabb4712472238679a4531050ed.jpg"
     },
 ];
 

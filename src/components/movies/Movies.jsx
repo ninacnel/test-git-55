@@ -24,7 +24,7 @@ const Movies = () => {
       <Button onClick={handleChangeNumber}>Incrementar</Button>
       <Button variant="warning" onClick={handleChangeShow}>Mostrar</Button>
       {show && <input type="text" onChange={(event) => setText(event.target.value)} />}
-      {/* <Container>
+      <Container>
         <Row className="justify-content-center">
           {moviesList.map((item) => (
             <Col key={item.movieId} className="col-12 col-md-6 col-lg-3 m-2">
@@ -34,7 +34,7 @@ const Movies = () => {
             </Col>
           ))}
         </Row>
-      </Container> */}
+      </Container>
     </>
   )
 }

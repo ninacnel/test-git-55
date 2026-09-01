@@ -1,6 +1,17 @@
-import { Badge, Card } from "react-bootstrap";
+import { useState } from "react";
+import { Badge, Card, Button } from "react-bootstrap";
 
-const MovieItem = ({ movie }) => {
+const MovieItem = ({ movie, onMoviePlayed, onLastMoviePlayed }) => {
+  const [views, setViews] = useState(0);
+
+  const handleMoviePlayed = () => {
+    onMoviePlayed();
+
+    setViews((prev) => prev + 1);
+
+    onLastMoviePlayed(movie.title);
+  }
+
   return (
     <Card className="h-100 shadow-sm border-0">
       <Card.Img
@@ -32,6 +43,9 @@ const MovieItem = ({ movie }) => {
           Dirigida por {movie.director}
         </Card.Subtitle>
       </Card.Body>
+
+      <p>Vistas: {views}</p>
+      <Button className="m-2" onClick={handleMoviePlayed}>Ver pelicula</Button>
     </Card>
   );
 };

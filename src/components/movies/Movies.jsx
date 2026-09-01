@@ -5,31 +5,30 @@ import { useState } from "react"
 
 const Movies = () => {
   // useState
-  const [number, setNumber] = useState(0);
-  const [text, setText] = useState("");
-  const [show, setShow] = useState(false);
+  const [totalViews, setTotalViews] = useState(0);
+  const [lastMovie, setLastMovie] = useState("");
 
-  const handleChangeNumber = () => {
-    setNumber((prevState) => prevState + 1);
+  const handleChangeTotalViews = () => {
+    setTotalViews((prevState) => prevState + 1);
   }
 
-  const handleChangeShow = () => {
-    setShow((prevState) => !prevState);
+  const handleChangeLastMovie = (title) => {
+    setLastMovie(title);
   }
 
   return (
     <>
-      <h1>{number}</h1>
-      {!text.length ? <p>No hay nada para mostrar</p> : <h2>{text}</h2>}
-      <Button onClick={handleChangeNumber}>Incrementar</Button>
-      <Button variant="warning" onClick={handleChangeShow}>Mostrar</Button>
-      {show && <input type="text" onChange={(event) => setText(event.target.value)} />}
+      <h1>Reproducciones totales: {totalViews}</h1>
+      <h2>Ultima pelicula vista: {lastMovie}</h2>
+
       <Container>
         <Row className="justify-content-center">
           {moviesList.map((item) => (
             <Col key={item.movieId} className="col-12 col-md-6 col-lg-3 m-2">
               <MovieItem
                 movie={item}
+                onMoviePlayed={handleChangeTotalViews}
+                onLastMoviePlayed={handleChangeLastMovie}
               />
             </Col>
           ))}

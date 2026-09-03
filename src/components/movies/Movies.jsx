@@ -1,4 +1,4 @@
-import { Button, Col, Container, Row } from "react-bootstrap"
+import { Col, Container, Row } from "react-bootstrap"
 import { moviesList } from "../data"
 import MovieItem from "./MovieItem"
 import { useState } from "react"

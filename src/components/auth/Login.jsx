@@ -53,6 +53,7 @@ const Login = () => {
                             placeholder="Ingresar email"
                             value={email}
                             onChange={handleEmailChange}
+                            className={errors.email && "is-invalid"}
                         />
                     </FormGroup>
                     <FormGroup className="mb-4">
@@ -62,6 +63,7 @@ const Login = () => {
                             value={password}
                             onChange={handlePasswordChange}
                             ref={passwordRef}
+                            className={errors.password && "is-invalid"}
                         />
                     </FormGroup>
                     <Row>

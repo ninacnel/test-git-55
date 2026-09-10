@@ -11,6 +11,10 @@ const Movies = () => {
   const [lastMovie, setLastMovie] = useState("");
   const [showForm, setShowForm] = useState(false);
 
+  const handleShowForm = () => {
+    setShowForm((prevState) => !prevState);
+  }
+
   const handleChangeTotalViews = () => {
     setTotalViews((prevState) => prevState + 1);
   }
@@ -28,7 +32,7 @@ const Movies = () => {
       <h1>Reproducciones totales: {totalViews}</h1>
       <h2>Ultima pelicula vista: {lastMovie}</h2>
 
-      <Button variant="light" onClick={() => setShowForm((prevState) => !prevState)}>{showForm ? "Esconder formulario" : "Mostrar formulario"}</Button>
+      <Button variant="light" onClick={handleShowForm}>{showForm ? "Esconder formulario" : "Mostrar formulario"}</Button>
 
       {showForm && <MovieForm onAddMovie={handleAddMovie} />}
 

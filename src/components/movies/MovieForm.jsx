@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Form } from "react-bootstrap";
+import { Button, Form, Card } from "react-bootstrap";
 
 const initialForm = {
     title: "",
@@ -49,101 +49,103 @@ const MovieForm = ({ onAddMovie }) => {
             movieId: Math.random(),
             ...form
         };
-console.log(newMovie)
+        console.log(newMovie)
         onAddMovie(newMovie);
 
         setForm(initialForm);
     };
 
     return (
-        <Form onSubmit={handleAddMovie} className="w-50">
+        <Card className="w-50 p-4">
+            <Form onSubmit={handleAddMovie}>
 
-            <Form.Group className="mb-3">
-                <Form.Label>Título</Form.Label>
-                <Form.Control
-                    type="text"
-                    name="title"
-                    value={form.title}
-                    onChange={handleChange}
-                />
-            </Form.Group>
+                <Form.Group className="mb-3">
+                    <Form.Label>Título</Form.Label>
+                    <Form.Control
+                        type="text"
+                        name="title"
+                        value={form.title}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
 
-            <Form.Group className="mb-3">
-                <Form.Label>Director</Form.Label>
-                <Form.Control
-                    type="text"
-                    name="director"
-                    value={form.director}
-                    onChange={handleChange}
-                />
-            </Form.Group>
+                <Form.Group className="mb-3">
+                    <Form.Label>Director</Form.Label>
+                    <Form.Control
+                        type="text"
+                        name="director"
+                        value={form.director}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
 
-            <Form.Group className="mb-3">
-                <Form.Label>Año</Form.Label>
-                <Form.Control
-                    type="number"
-                    name="year"
-                    value={form.year}
-                    onChange={handleChange}
-                />
-            </Form.Group>
+                <Form.Group className="mb-3">
+                    <Form.Label>Año</Form.Label>
+                    <Form.Control
+                        type="number"
+                        name="year"
+                        value={form.year}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
 
-            <Form.Group className="mb-3">
-                <Form.Label>Duración</Form.Label>
-                <Form.Control
-                    type="number"
-                    name="duration"
-                    value={form.duration}
-                    onChange={handleChange}
-                />
-            </Form.Group>
+                <Form.Group className="mb-3">
+                    <Form.Label>Duración</Form.Label>
+                    <Form.Control
+                        type="number"
+                        name="duration"
+                        value={form.duration}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
 
-            <Form.Group className="mb-3">
-                <Form.Label>País</Form.Label>
-                <Form.Control
-                    type="text"
-                    name="country"
-                    value={form.country}
-                    onChange={handleChange}
-                />
-            </Form.Group>
+                <Form.Group className="mb-3">
+                    <Form.Label>País</Form.Label>
+                    <Form.Control
+                        type="text"
+                        name="country"
+                        value={form.country}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
 
-            <Form.Group className="mb-3">
-                <Form.Label>Actores</Form.Label>
+                <Form.Group className="mb-3">
+                    <Form.Label>Actores</Form.Label>
 
-                <Form.Control
-                    type="text"
-                    value={form.cast}
-                    onChange={handleCastChange}
-                    placeholder="Separar nombres por comas"
-                />
-            </Form.Group>
+                    <Form.Control
+                        type="text"
+                        value={form.cast}
+                        onChange={handleCastChange}
+                        placeholder="Separar nombres por comas"
+                    />
+                </Form.Group>
 
-            <Form.Group className="mb-3">
-                <Form.Check
-                    type="checkbox"
-                    label="Película gratuita"
-                    name="isFree"
-                    checked={form.isFree}
-                    onChange={handleCheck}
-                />
-            </Form.Group>
+                <Form.Group className="mb-3">
+                    <Form.Check
+                        type="checkbox"
+                        label="Película gratuita"
+                        name="isFree"
+                        checked={form.isFree}
+                        onChange={handleCheck}
+                    />
+                </Form.Group>
 
-            <Form.Group className="mb-3">
-                <Form.Label>Imagen</Form.Label>
-                <Form.Control
-                    type="text"
-                    name="image"
-                    value={form.image}
-                    onChange={handleChange}
-                />
-            </Form.Group>
+                <Form.Group className="mb-3">
+                    <Form.Label>Imagen</Form.Label>
+                    <Form.Control
+                        type="text"
+                        name="image"
+                        value={form.image}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
 
-            <Button type="submit">
-                Agregar
-            </Button>
+                <Button type="submit">
+                    Agregar
+                </Button>
 
-        </Form>
+            </Form>
+        </Card>
     );
 };
 

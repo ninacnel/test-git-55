@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap"
+import { Button, Col, Container, Row } from "react-bootstrap"
 import { moviesList } from "../data"
 import MovieItem from "./MovieItem"
 import { useState } from "react"
@@ -6,9 +6,10 @@ import MovieForm from "./MovieForm"
 
 const Movies = () => {
   // useState
+  const [movies, setMovies] = useState(moviesList);
   const [totalViews, setTotalViews] = useState(0);
   const [lastMovie, setLastMovie] = useState("");
-  const [movies, setMovies] = useState(moviesList);
+  const [showForm, setShowForm] = useState(false);
 
   const handleChangeTotalViews = () => {
     setTotalViews((prevState) => prevState + 1);
@@ -19,7 +20,7 @@ const Movies = () => {
   }
 
   const handleAddMovie = (newMovie) => {
-    setMovies((prevState) => [ newMovie, ...prevState]);
+    setMovies((prevState) => [newMovie, ...prevState]);
   }
 
   return (
@@ -27,7 +28,9 @@ const Movies = () => {
       <h1>Reproducciones totales: {totalViews}</h1>
       <h2>Ultima pelicula vista: {lastMovie}</h2>
 
-      <MovieForm onAddMovie={handleAddMovie}/>
+      <Button variant="light" onClick={() => setShowForm((prevState) => !prevState)}>{showForm ? "Esconder formulario" : "Mostrar formulario"}</Button>
+
+      {showForm && <MovieForm onAddMovie={handleAddMovie} />}
 
       <Container>
         <Row className="justify-content-center">

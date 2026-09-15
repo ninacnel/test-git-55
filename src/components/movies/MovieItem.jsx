@@ -7,7 +7,7 @@ const MovieItem = ({
   onLastMoviePlayed,
   onDelete
 }) => {
-  const [views, setViews] = useState(0);
+  const [views, setViews] = useState(10000);
 
   const handleMoviePlayed = () => {
     onMoviePlayed();

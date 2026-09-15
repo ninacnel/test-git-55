@@ -1,7 +1,12 @@
 import { useState } from "react";
 import { Badge, Card, Button } from "react-bootstrap";
 
-const MovieItem = ({ movie, onMoviePlayed, onLastMoviePlayed }) => {
+const MovieItem = ({
+  movie,
+  onMoviePlayed,
+  onLastMoviePlayed,
+  onDelete
+}) => {
   const [views, setViews] = useState(0);
 
   const handleMoviePlayed = () => {
@@ -45,7 +50,22 @@ const MovieItem = ({ movie, onMoviePlayed, onLastMoviePlayed }) => {
       </Card.Body>
 
       <p>Vistas: {views}</p>
-      <Button className="m-2" onClick={handleMoviePlayed}>Ver pelicula</Button>
+
+      <Button
+        className="m-2"
+        onClick={handleMoviePlayed}
+      >
+        Ver película
+      </Button>
+
+      <Button
+        className="m-2"
+        variant="danger"
+        onClick={() => onDelete(movie)}
+      >
+        Eliminar
+      </Button>
+
     </Card>
   );
 };

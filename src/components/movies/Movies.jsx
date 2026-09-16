@@ -3,6 +3,7 @@ import { moviesList } from "../data"
 import MovieItem from "./MovieItem"
 import { useState } from "react"
 import MovieForm from "./MovieForm"
+import DeleteMovieModal from "../shared/DeleteMovieModal"
 
 const Movies = () => {
   // useState
@@ -10,6 +11,8 @@ const Movies = () => {
   const [totalViews, setTotalViews] = useState(0);
   const [lastMovie, setLastMovie] = useState("");
   const [showForm, setShowForm] = useState(false);
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
+  const [movieToDelete, setMovieToDelete] = useState(null);
 
   const handleShowForm = () => {
     setShowForm((prevState) => !prevState);
@@ -25,6 +28,22 @@ const Movies = () => {
 
   const handleAddMovie = (newMovie) => {
     setMovies((prevState) => [newMovie, ...prevState]);
+  }
+
+  const handleShowDeleteModal = (movie) => {
+    setMovieToDelete(movie);
+    setShowDeleteModal(true);
+  }
+
+  const handleHideDeleteModal = () => {
+    setShowDeleteModal(false);
+    setMovieToDelete(null);
+  }
+
+  const handleDeleteMovie = (movieId) => {
+    setMovies((prevMovies) =>
+      prevMovies.filter(movie => movie.movieId !== movieId)
+    );
   }
 
   return (
@@ -44,11 +63,21 @@ const Movies = () => {
                 movie={item}
                 onMoviePlayed={handleChangeTotalViews}
                 onLastMoviePlayed={handleChangeLastMovie}
+                onDelete={handleShowDeleteModal}
               />
             </Col>
           ))}
         </Row>
       </Container>
+
+      {movieToDelete && (
+        <DeleteMovieModal
+          show={showDeleteModal}
+          movie={movieToDelete}
+          onHide={handleHideDeleteModal}
+          onDelete={handleDeleteMovie}
+        />
+      )}
     </>
   )
 }

@@ -1,18 +1,21 @@
 import { useRef, useState } from "react";
 import { Button, Card, Col, Form, FormGroup, Row } from "react-bootstrap";
+import { useNavigate } from "react-router";
 
 const initialErrors = {
     email: false,
     password: false,
 };
 
-const Login = () => {
+const Login = ({ onLogIn }) => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [errors, setErrors] = useState(initialErrors);
 
     const emailRef = useRef(null);
     const passwordRef = useRef(null);
+
+    const navigate = useNavigate();
 
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
@@ -40,10 +43,12 @@ const Login = () => {
         }
 
         alert(`Usuario con email: ${email} ha iniciado sesion`);
+        onLogIn();
+        navigate("/");
     }
 
     return (
-        <Card className="w-50 mt-5 mx-3 p-3 px-5 shadow">
+        <Card className="w-100 mt-5 mx-3 p-3 px-5 shadow">
             <Card.Body>
                 <Form onSubmit={handleSubmit}>
                     <FormGroup className="mb-4">

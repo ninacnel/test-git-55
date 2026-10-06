@@ -57,13 +57,6 @@ const MovieItem = ({
 
       <Button
         className="m-2"
-        onClick={handleMoviePlayed}
-      >
-        Ver película
-      </Button>
-
-      <Button
-        className="m-2"
         variant="danger"
         onClick={() => onDelete(movie)}
       >

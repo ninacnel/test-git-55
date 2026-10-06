@@ -1,11 +1,7 @@
 import { useRef, useState } from "react";
 import { Button, Card, Col, Form, FormGroup, Row } from "react-bootstrap";
 import { useNavigate } from "react-router";
-
-const initialErrors = {
-    email: false,
-    password: false,
-};
+import { initialErrors } from "./login.data";
 
 const Login = ({ onLogIn }) => {
     const [email, setEmail] = useState("");

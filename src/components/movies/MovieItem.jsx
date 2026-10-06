@@ -17,11 +17,13 @@ const MovieItem = ({
     onLastMoviePlayed(movie.title);
   }
 
+  const imagePlaceholder = "https://i.pinimg.com/736x/db/e0/d2/dbe0d2fbf500c82e3670f51a9ee39869.jpg";
+
   return (
     <Card className="h-100 shadow-sm border-0">
       <Card.Img
         variant="top"
-        src={movie.image}
+        src={imagePlaceholder}
         alt={movie.title}
         style={{
           height: "350px",

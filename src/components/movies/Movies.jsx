@@ -1,7 +1,7 @@
 import { Button, Col, Container, Row } from "react-bootstrap"
 import { moviesList } from "../data"
 import MovieItem from "./MovieItem"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import MovieForm from "./MovieForm"
 import DeleteMovieModal from "../shared/DeleteMovieModal"
 
@@ -13,6 +13,13 @@ const Movies = () => {
   const [showForm, setShowForm] = useState(false);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [movieToDelete, setMovieToDelete] = useState(null);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/movies")
+    .then(res => res.json())
+    .then(res => console.log(res))
+    .catch(err => console.log(err));
+  }, []);
 
   const handleShowForm = () => {
     setShowForm((prevState) => !prevState);
